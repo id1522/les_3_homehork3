@@ -1,14 +1,17 @@
 package com.company;
-
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("числа от 5 до 1");
-        for (int i = 5; i >= 0; i = i - 1) {
-            System.out.println(i);
+        System.out.println("Введи число: ");
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int sum = 0;
+        for ( int i = 1; i <= n; i++ ) {
+            sum = sum + i;
         }
+        System.out.println("Сумма чисел до введенного = "+sum);
         System.out.println("Готово");
     }
-
 }
 
 
