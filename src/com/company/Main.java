@@ -1,16 +1,10 @@
 package com.company;
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Введи число: ");
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        int sum = 0;
-        for ( int i = 1; i <= n; i++ ) {
-            sum = sum + i;
+        for (int i = 7; i <= 98; i= i + 7){
+            System.out.println(i);
         }
-        System.out.println("Сумма чисел до введенного = "+sum);
-        System.out.println("Готово");
     }
 }
 
